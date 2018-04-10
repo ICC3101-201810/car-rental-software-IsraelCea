@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    public class Sucursal
+    class Sucursal
     {
-        string nombre;
+        public string nombre;
         List<Vehiculo> vehiculosDisponibles;
         List<Accesorio> accesoriosDisponibles;
         public Sucursal(string elNombre, List<Vehiculo> vehic, List<Accesorio> acces)
@@ -21,13 +21,6 @@ namespace LAB_3_IsraelCea
         {
             return sucursal.nombre;
         }
-        public static List<Vehiculo> getVehiculos(Sucursal sucursal)
-        {
-            return sucursal.vehiculosDisponibles;
-        }
-        public static getAccesorios(Sucursal sucursal)
-        {
-            return sucursal.accesoriosDisponibles;
-        }
+        
     }
 }
