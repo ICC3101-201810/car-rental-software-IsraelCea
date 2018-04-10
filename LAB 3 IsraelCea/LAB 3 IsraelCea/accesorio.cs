@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    class Accesorio
+    public class Accesorio
     {
         string nombre;
         int precio;

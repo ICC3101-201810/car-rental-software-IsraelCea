@@ -94,6 +94,15 @@ namespace LAB_3_IsraelCea
                     int indiceSucursal = Convert.ToInt32(sucString);//Indice en la lista de la sucursal elegida
                     Sucursal sucursalLocal = listaSucursales[indiceSucursal-1];
                     Console.WriteLine("Arrendará un vehículo en la sucursal '"+sucursalLocal.nombre+"'");
+                    List<Vehiculo> vehiculos = sucursalLocal.vehiculosDisponibles;
+                    List<Accesorio> accesorios = sucursalLocal.accesoriosDisponibles;
+                    Console.WriteLine("Tenemos estos vehiculos disponibles en la sucursal" + sucursalLocal.nombre + "'");
+                    int ii=1;
+                    foreach (Vehiculo v in vehiculos)
+                    {
+                        Console.WriteLine(ii+". Vehículo:" + v.tipo + "----Patente:" + v.patente);
+                        ii += 1;
+                    }
 
                 }
                 if (opcionInicio == "3")//Correr simulación

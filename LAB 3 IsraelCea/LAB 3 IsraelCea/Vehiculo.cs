@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    class Vehiculo
+    public class Vehiculo
     {
-        string tipo, licenciaRequerida, patente;
-        int precioDiario;
-        bool arrendado; //indica estado actual del vehiculo, true=arrendado, false=disponible
+        public string tipo, licenciaRequerida, patente;
+        public int precioDiario;
+        public bool arrendado; //indica estado actual del vehiculo, true=arrendado, false=disponible
         public Vehiculo(string miTipo, string miPatente, string miLicencia, int miPrecio, bool estaArrendado)
         {
             tipo = miTipo;
