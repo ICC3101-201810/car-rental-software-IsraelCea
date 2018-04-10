@@ -8,14 +8,14 @@ namespace LAB_3_IsraelCea
 {
     class Arriendo
     {
-        Cliente cliente;
+        Persona cliente;
         Vehiculo vehiculo;
         Sucursal sucursal;
         List<Accesorio> accesorios;
         DateTime fechaInicio;
         DateTime fechaFin;
         int total;
-        public Arriendo(Cliente elCl, Vehiculo elVe, Sucursal laSuc
+        public Arriendo(Persona elCl, Vehiculo elVe, Sucursal laSuc
                         ,List<Accesorio> losAcc, DateTime FI, DateTime FF
                         , int elTotal)
         {

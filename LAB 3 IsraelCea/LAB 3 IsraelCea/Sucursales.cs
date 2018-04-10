@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    public class Sucursales
+    class Sucursales
     {
-       List<Sucursal> sucursalesTodas = new List<Sucursal>();
+        List<Sucursal> sucursalesTodas = new List<Sucursal>();
+        public Sucursales(List<Sucursal> sucursalesT)
+        {
+            sucursalesTodas = sucursalesT;
+        }
 
     }
 }

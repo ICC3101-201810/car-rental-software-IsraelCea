@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    class Empresa: Cliente
+    class Empresa
     {
         string nombre;
         int RUT;

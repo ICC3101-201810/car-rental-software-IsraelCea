@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    class Cliente
+    class Clientes
     {
-        public Cliente()
+        List<Persona> clientes;
+        public Clientes(List<Persona> misClientes)
         {
+            clientes = misClientes;
         }
     }
+
 }

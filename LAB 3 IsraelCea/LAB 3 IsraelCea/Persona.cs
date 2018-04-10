@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    class Persona: Cliente
+    class Persona
     {
         String nombre, apellido, tipoLicencia;
-        int RUT;
-        public Persona(string miNombre, string miApellido, int miRUT, string miTipoLicencia)
+        int RUT, IDCliente;
+        public Persona(string miNombre, string miApellido, int miRUT, string miTipoLicencia, int miIDCliente)
         {
             nombre = miNombre;
             apellido = miApellido;
             RUT = miRUT;
             tipoLicencia = miTipoLicencia;
+            IDCliente = miIDCliente;
         }
     }
 }
