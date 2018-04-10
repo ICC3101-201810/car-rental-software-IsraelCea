@@ -6,31 +6,40 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    class Empresa: Cliente
+    class Organizacion : Cliente
     {
         string nombre, idCliente;
-        int RUT;
-        bool licenciaMaqPesada,permisoBus;
-        string tipoCliente = "EMP";
-        public Empresa(string miNombre, string miID, int miRUT, bool lBus, bool lMaqP)
+        bool permisoBus;
+        bool permisoMaqP=false;
+        string tipoCliente="ORG";
+        public Organizacion(string miNombre, string miID, bool permisoB)
             : base(miID)
         {
             nombre = miNombre;
             idCliente = miID;
-            RUT = miRUT;
-            licenciaBus = lBus;//80%
-            licenciaMaqPesada = lMaqP;//63%
-            
+            permisoBus = permisoB;//35%
+
+        }
+
+        public bool getPermisoMaquinaria()
+        {
+            return permisoMaqP;
+        }
+
+        public bool getPermisoBus()
+        {
+            return permisoBus;
         }
         public override string getTipoCliente()
         {
             return tipoCliente;
         }
+
         public override bool otorgarLicenciaBus()
         {
             Random rnd = new Random();
             int probabilidad = rnd.Next(1, 100); // creates a number between 1 and 100
-            if (0 <= probabilidad && probabilidad >= 80)
+            if (0 <= probabilidad && probabilidad >= 35)
             {
                 permisoBus = true;
             }
@@ -43,3 +52,4 @@ namespace LAB_3_IsraelCea
         }
     }
 }
+

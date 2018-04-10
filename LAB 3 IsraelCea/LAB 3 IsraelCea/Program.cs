@@ -100,7 +100,7 @@ namespace LAB_3_IsraelCea
                     int ii=1;
                     foreach (Vehiculo v in vehiculos)
                     {
-                        Console.WriteLine(ii+". Vehículo:" + v.tipo + "----Patente:" + v.patente);
+                        Console.WriteLine(ii+". Vehículo:" + v.marca + "----Patente:" + v.patente);
                         ii += 1;
                     }
 

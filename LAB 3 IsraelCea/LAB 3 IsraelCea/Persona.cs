@@ -6,17 +6,25 @@ using System.Threading.Tasks;
 
 namespace LAB_3_IsraelCea
 {
-    class Persona
+    class Persona: Cliente
     {
-        String nombre, apellido, tipoLicencia;
-        int RUT, IDCliente;
-        public Persona(string miNombre, string miApellido, int miRUT, string miTipoLicencia, int miIDCliente)
+        String nombre, apellido, tipoLicencia, idCliente;
+        int RUT;
+        bool permisoBus = false;
+        string tipoCliente = "PER";
+        public Persona(string miNombre, string miApellido, int miRUT, string miTipoLicencia, string miIDCliente)
+            :base(miIDCliente)
         {
             nombre = miNombre;
             apellido = miApellido;
             RUT = miRUT;
             tipoLicencia = miTipoLicencia;
-            IDCliente = miIDCliente;
+            idCliente = miIDCliente;
+        }
+        public override string getTipoCliente()
+        {
+            return tipoCliente;
         }
     }
 }
+//persona.gettype.tostring() --------> guarda 'persona'
