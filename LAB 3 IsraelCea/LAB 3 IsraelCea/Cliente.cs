@@ -13,9 +13,8 @@ namespace LAB_3_IsraelCea
         {
             idCliente = miId;
         }
-        abstract public string getTipoCliente();
-        abstract public bool otorgarLicenciaBus();//otorga licencia de bus
-        abstract public bool otorgarLicenciaMaqP();//otorga licencia maquinaria pesada
+        abstract public bool DarPermisoBus();//otorga licencia de bus
+        abstract public bool DarPermisoMaqP();//otorga licencia maquinaria pesada
     }
 
     

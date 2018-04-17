@@ -11,7 +11,7 @@ namespace LAB_3_IsraelCea
         String nombre, apellido, tipoLicencia, idCliente;
         int RUT;
         bool permisoBus = false;
-        string tipoCliente = "PER";
+        bool permisoMaqP = false;
         public Persona(string miNombre, string miApellido, int miRUT, string miTipoLicencia, string miIDCliente)
             :base(miIDCliente)
         {
@@ -21,10 +21,17 @@ namespace LAB_3_IsraelCea
             tipoLicencia = miTipoLicencia;
             idCliente = miIDCliente;
         }
-        public override string getTipoCliente()
+
+        public override bool DarPermisoBus()
         {
-            return tipoCliente;
+            throw new NotImplementedException();
         }
+
+        public override bool DarPermisoMaqP()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
 //persona.gettype.tostring() --------> guarda 'persona'

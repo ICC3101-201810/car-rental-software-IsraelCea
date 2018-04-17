@@ -10,15 +10,15 @@ namespace LAB_3_IsraelCea
     {
         public string marca, licenciaRequerida, patente;
         public int precioDiario;
-        public bool arrendado; //indica estado actual del vehiculo, true=arrendado, false=disponible
+        public bool disponible; //indica estado actual del vehiculo, true=arrendado, false=disponible
 
-        public Vehiculo(string miMarca, string miPatente, string miLicencia, int miPrecio, bool estaArrendado)
+        public Vehiculo(string miMarca, string miPatente, string miLicencia, int miPrecio, bool estaDisponible)
         {
             marca = miMarca;
             patente = miPatente;
             licenciaRequerida = miLicencia;
             precioDiario = miPrecio;
-            arrendado = estaArrendado;
+            disponible = estaDisponible;
         }
         
         
